@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Full Attach",
+            "type": "clr",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+        },
+        {
+            "name": ".NET Full Attach - No JMC",
+            "type": "clr",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+            "justMyCode": false
+        },
+        {
+            "name": ".NET Core Attach - No JMC",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+            "justMyCode": false
+        }
+    ]
+}
